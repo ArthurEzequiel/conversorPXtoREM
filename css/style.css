@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
+::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  
+    background: #5D2C8E;
+  }
+
 ::selection {
     background-color: transparent;
     color: #5D2C8E;
@@ -30,6 +41,7 @@ body {
     background: radial-gradient(98.84% 98.84% at 50% 1.16%, #F6F6F6 0%, #CAB0FF 100%);
     color: #fff;
     font-family: 'Montserrat', sans-serif;
+    -webkit-overflow-scrolling:touch;
 }
 
 .section {
