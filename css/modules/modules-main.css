@@ -1,0 +1,153 @@
+@media screen and (max-width: 1440px) {
+
+    .calc {
+        width: 25rem;
+        margin-right: 3rem;
+        padding: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 1487px) {
+
+    .welcome-text {
+        font-size: 27px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .welcome-text {
+        font-size: 23px;
+    }
+
+    .calc {
+        width: 20rem;
+        padding: 5rem;
+        height: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .welcome-text {
+        font-size: 23px;
+    }
+
+    .calc {
+        padding: 5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .calc {
+        width: 25rem;
+        margin-right: 3rem;
+        padding: 5rem;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 980px) {
+    .nav-bar {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(18px);
+        width: 100%;
+        height: 5rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .welcome-area {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .welcome-text {
+        font-size: 30px;
+    }
+
+    .calc {
+        padding: 5rem;
+        margin: 0;
+    }
+
+    .for-area {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .welcome-area {
+        height: 100vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .welcome-area {
+        height: 100vh;
+    }
+
+    .welcome-text {
+        font-size: 25px;
+        width: 60%;
+    }
+
+    .calc {
+        width: 90%;
+        height: 70%;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        padding: 3rem 0;
+        border-radius: 20px;
+    }
+
+    .form-grid {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .btn {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .px-area {
+        width: 80%;
+    }
+
+    .valor-px {
+        height: 3rem;
+        font-size: 20px;
+    }
+
+    #resultado {
+        font-size: 40px;
+    }
+
+    .for-area {
+        width: 80%;
+        margin: 0;
+    }
+
+}

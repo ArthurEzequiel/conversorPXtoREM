@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/modules/modules-main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/circle.png">
+    <title>Conversor</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="nav-text">Conv</h1>
+    </div>
+
+    <div class="section">
+        <div class="welcome-area">
+            <h1 class="welcome-text">Converta qualquer <Strong>Pixel</Strong>
+                em <Strong>REM</Strong> com <Strong>facilidade</Strong>!</h1>
+        </div>
+        <div class="form-area"><div class="form-grid">
+            <form id="conversor" class="calc">
+                <div class="display">
+                    <div class="font-base-area" style="text-align: center;">
+                        <label for="valor-px" class="valor-px-text-result">Resultado</label>
+                        <div id="resultado"></div>
+                        <input type="number" id="tamanho-fonte-base" class="valor-px" value="16"
+                            style="display: none; position: absolute   ;">
+                    </div>
+                </div>
+                <div class="px-area"style="display: grid;">
+                    <label for="valor-px" class="valor-px-text">Valor</label>
+                    <input type="number" id="valor-px" class="valor-px" placeholder="Insira um valor">
+                </div>
+
+                <div class="for-area" style="display: grid; grid-template-columns: auto auto auto;" style="width: fit-content; height: 4rem; margin-bottom: 3rem;">
+
+                    <div class="of-area" style="text-align: end; display: grid; place-items: center;">
+                        <label for="valor-px" class="valor-px-text">De</label>
+                        <div class="valor-px"
+                            style="width: 5rem; display: flex; align-items: center; justify-content: center; padding: 0; cursor: default;">
+                            <strong style="opacity:60%;">PX</strong></div>
+                    </div>
+
+                    <div class="of-area" style="display: grid; place-items: center; padding-top: 2rem;">
+                       <img src="/img/Arrow 1.png" width="40px" alt="">
+                    </div>
+
+                    <div class="of-area" style="text-align: end; display: grid; place-items: center;">
+                        <label for="valor-px" class="valor-px-text">Para</label>
+                        <div class="valor-px"
+                            style="width: 5rem; display: flex; align-items: center; justify-content: center; padding: 0; cursor: default;">
+                            <strong style="opacity:60%;">REM</strong></div>
+                    </div>
+                </div>
+
+                <div class="btn-area" style="display: grid; place-items: center; width: 100%;">
+                <button class="btn" type="submit">Converter</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('conversor').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var valorPx = document.getElementById('valor-px').value;
+            var tamanhoFonteBase = document.getElementById('tamanho-fonte-base').value;
+
+            var valorRem = valorPx / tamanhoFonteBase;
+            
+            document.getElementById('resultado').innerHTML = valorRem + ' REM';
+        });</script>
+</body>
+
+</html>
